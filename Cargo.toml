@@ -1,0 +1,22 @@
+[package]
+name = "num2word"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/Nyjako/num2word"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+authors = [
+    "Kacper Tucholski <kacper.tucholski.kt@gmail.com>"
+]
+keywords = []
+
+[features]
+all = ["pl", "en_US"]
+pl = []
+en_US = []
+
+[dev-dependencies]
+num2word ={ path = ".", features = ["all"] }
+
+[dependencies]
+lazy_static = "1.5.0"
